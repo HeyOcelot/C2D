@@ -30,7 +30,7 @@ const TeddyBear = () => (
 export default function NurseryLanding() {
   const [showConfirm, setShowConfirm] = useState(false)
 
-  const bskyUrl = "https://bsky.app/profile/come2daddyprod.bsky.social"
+  const bskyUrl = "https://justfor.fans/Come2Daddy"
 
   return (
     <main className="h-screen w-full relative bg-[#fdfbf7] overflow-hidden font-sans text-[#5A5A40]">
@@ -51,7 +51,7 @@ export default function NurseryLanding() {
               <div className="absolute inset-0 shadow-[inset_0_0_40px_rgba(0,0,0,0.6)] pointer-events-none rounded-[35px]" />
               <div className="bg-[#FFE282] p-8 rounded-[25px] ring-1 ring-gray-200 text-center relative flex flex-col items-center">
                 <p className="text-xl text-[#5A5A40] mb-8 font-medium leading-relaxed">
-                  Please be advised that you are now leaving the Nursery Dream website to visit our official BlueSky profile. We are not responsible for the content or privacy standards of external platforms.
+                  Please be advised that you are now leaving to visit our JustFor.Fans profile. The following material depicts a fictional narrative in which adults engage in consensual age-play fantasy. <span className="font-bold text-[#DF08A1]">This content may only be viewed and heard by adults over the age of 18.</span>
                 </p>
                 
                 <p className="text-2xl text-[#06849F] font-bold uppercase tracking-widest mb-10">
@@ -118,14 +118,12 @@ export default function NurseryLanding() {
           <div className="bg-[#FFE282] p-0 ring-1 ring-gray-200 rounded-[25px] w-full h-full text-center relative flex flex-col items-center justify-between md:min-h-[440px] flex-1">
             {/* Logo Image */}
             <a 
-              href="https://bsky.app/profile/come2daddyprod.bsky.social" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              onClick={() => setShowConfirm(true)}
               className="p-8 pb-4 md:p-[50px] md:pb-6 flex justify-center w-full cursor-pointer hover:opacity-90 transition-opacity active:scale-95"
             >
                <img 
                  src="https://i.imgur.com/D4ODMrE.png" 
-                 alt="Nursery Dream Logo" 
+                 alt="Come2Daddy" 
                  className="w-full h-auto max-h-[120px] md:max-h-none object-contain"
                />
             </a>
@@ -162,7 +160,7 @@ export default function NurseryLanding() {
                 onClick={() => setShowConfirm(true)}
                 className="text-lg md:text-[1.75rem] text-[#06849F] font-bold flex items-center group uppercase tracking-widest drop-shadow-sm transition-all hover:text-[#DF08A1] active:scale-95"
               >
-                Hear from us at BlueSky!
+                Hear from Daddy at JustFor.Fans!
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
               </button>
             </div>
