@@ -8,8 +8,8 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: 'Come2Daddy',
-  description: '...And be your best little self!',
+  title: 'Nursery Dream',
+  description: 'A sanctuary for the world\'s newest arrivals.',
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {

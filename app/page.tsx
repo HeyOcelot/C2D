@@ -30,7 +30,7 @@ const TeddyBear = () => (
 export default function NurseryLanding() {
   const [showConfirm, setShowConfirm] = useState(false)
 
-  const bskyUrl = "https://justfor.fans/Come2Daddy"
+  const bskyUrl = "https://bsky.app/profile/come2daddyprod.bsky.social"
 
   return (
     <main className="h-screen w-full relative bg-[#fdfbf7] overflow-hidden font-sans text-[#5A5A40]">
@@ -51,7 +51,7 @@ export default function NurseryLanding() {
               <div className="absolute inset-0 shadow-[inset_0_0_40px_rgba(0,0,0,0.6)] pointer-events-none rounded-[35px]" />
               <div className="bg-[#FFE282] p-8 rounded-[25px] ring-1 ring-gray-200 text-center relative flex flex-col items-center">
                 <p className="text-xl text-[#5A5A40] mb-8 font-medium leading-relaxed">
-                  Please be advised that you are now leaving to visit our official JustFor.Fans site. The following material depicts a fictional narrative describing adults engaging in consensual fantasy age-play. <b>This content may only be viewed and heard by adults over the age of 18.</b>
+                  Please be advised that you are now leaving the Nursery Dream website to visit our official BlueSky profile. We are not responsible for the content or privacy standards of external platforms.
                 </p>
                 
                 <p className="text-2xl text-[#06849F] font-bold uppercase tracking-widest mb-10">
@@ -67,7 +67,7 @@ export default function NurseryLanding() {
                   </button>
                   <a 
                     href={bskyUrl}
-                    target="_self"
+                    target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setShowConfirm(false)}
                     className="flex-1 max-w-[140px] py-4 bg-[#06849F] text-white rounded-full font-black uppercase tracking-widest hover:bg-[#056d83] transition-all shadow-lg active:scale-95 flex items-center justify-center"
@@ -89,7 +89,7 @@ export default function NurseryLanding() {
       </div>
 
       {/* Header Wallpaper Border */}
-      <div className="absolute top-0 left-0 w-full h-[180px] z-10 overflow-hidden bg-repeat-x" 
+      <div className="hidden md:block absolute top-0 left-0 w-full h-[180px] z-10 overflow-hidden bg-repeat-x" 
            style={{ 
              backgroundImage: `url('https://i.imgur.com/y69dpty.png')`,
              backgroundSize: 'auto 180px' 
@@ -97,15 +97,15 @@ export default function NurseryLanding() {
       </div>
 
       {/* Centerpiece Frame Container */}
-      <div className="absolute inset-0 flex flex-col items-center justify-start p-4 z-20">
+      <div className="absolute inset-0 flex flex-col items-center justify-center p-[5%] md:p-4 z-20">
         {/* Vertical Spacer 1 (Top) */}
-        <div className="flex-[1]" />
+        <div className="hidden md:block md:flex-[1]" />
 
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="relative p-[34px] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] rounded-[35px] w-3/4 overflow-hidden"
+          className="relative p-4 md:p-[34px] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] rounded-[35px] w-full h-full md:w-3/4 md:h-auto overflow-hidden flex flex-col"
           style={{
             backgroundImage: "url('https://i.imgur.com/cjYjamz.png')",
             backgroundRepeat: "repeat",
@@ -115,52 +115,54 @@ export default function NurseryLanding() {
           <div className="absolute inset-0 shadow-[inset_0_0_40px_rgba(0,0,0,0.8)] pointer-events-none rounded-[35px]" />
           
           {/* Inner Content Box */}
-          <div className="bg-[#FFE282] p-0 ring-1 ring-gray-200 rounded-[25px] w-full text-center relative flex flex-col items-center justify-between min-h-[440px]">
+          <div className="bg-[#FFE282] p-0 ring-1 ring-gray-200 rounded-[25px] w-full h-full text-center relative flex flex-col items-center justify-between md:min-h-[440px] flex-1">
             {/* Logo Image */}
             <a 
-              onClick={() => setShowConfirm(true)}
-              className="p-[50px] pb-6 flex justify-center w-full cursor-pointer hover:opacity-90 transition-opacity"
+              href="https://bsky.app/profile/come2daddyprod.bsky.social" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-8 pb-4 md:p-[50px] md:pb-6 flex justify-center w-full cursor-pointer hover:opacity-90 transition-opacity active:scale-95"
             >
                <img 
                  src="https://i.imgur.com/D4ODMrE.png" 
-                 alt="Come2Daddy" 
-                 className="w-full h-auto object-contain"
+                 alt="Nursery Dream Logo" 
+                 className="w-full h-auto max-h-[120px] md:max-h-none object-contain"
                />
             </a>
 
-            <p className="text-4xl text-[#06849F] uppercase tracking-widest font-bold text-center mb-8 px-12">
+            <p className="text-[1.25rem] md:text-4xl text-[#06849F] uppercase tracking-widest font-bold text-center mb-6 md:mb-8 px-6 md:px-12 leading-tight">
               ...and be your best little self!
             </p>
 
-            <div className="flex flex-col md:flex-row justify-center gap-8 mb-8 text-sm font-semibold text-gray-700 px-12">
+            <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 mb-6 md:mb-8 text-xs md:text-sm font-semibold text-gray-700 px-6 md:px-12">
               <a 
                 href="https://bsky.app/profile/come2daddyprod.bsky.social" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-[#0085ff] transition-colors cursor-pointer"
+                className="flex items-center gap-2 hover:text-[#DF08A1] active:opacity-70 active:scale-95 transition-all cursor-pointer bg-white/40 md:bg-transparent p-2 md:p-0 rounded-lg"
               >
-                <svg viewBox="0 0 512 512" width="20" height="20" className="fill-current">
+                <svg viewBox="0 0 512 512" width="18" height="18" className="fill-current shrink-0">
                   <path d="M111.8 61.1C183.7 75.3 227.1 137.4 256 160c28.9-22.6 72.3-84.7 144.2-98.9c38.5-7.6 111.8 14.2 111.8 113.8c0 24.3-11.8 108.5-47.4 153.3c-39.6 49.7-90.7 46.1-125.1 40.1c-1.2-.2-2.3-.4-3.5-.6c-13.3-2.3-25-2.2-36 0c-1.2.2-2.3.4-3.5.6c-34.4 6-85.5 9.6-125.1-40.1C35.8 283.4 24 199.2 24 174.9c0-99.6 73.3-121.4 111.8-113.8z"/>
                 </svg>
-                <span>@Come2DaddyProd.bsky.social</span>
+                <span className="truncate">@Come2DaddyProd.bsky.social</span>
               </a>
               <a 
                 href="https://x.com/Come2DaddyProd" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-black transition-colors cursor-pointer"
+                className="flex items-center gap-2 hover:text-[#DF08A1] active:opacity-70 active:scale-95 transition-all cursor-pointer bg-white/40 md:bg-transparent p-2 md:p-0 rounded-lg"
               >
-                <X size={20} />
-                <span>@Come2DaddyProd</span>
+                <X size={18} className="shrink-0" />
+                <span className="truncate">@Come2DaddyProd</span>
               </a>
             </div>
 
-            <div className="pt-4 pb-12 w-full flex justify-center px-12">
+            <div className="pt-2 md:pt-4 pb-8 md:pb-12 w-full flex justify-center px-6 md:px-12">
               <button 
                 onClick={() => setShowConfirm(true)}
-                className="text-[1.75rem] text-[#06849F] font-bold flex items-center group uppercase tracking-widest drop-shadow-sm transition-opacity hover:opacity-80"
+                className="text-lg md:text-[1.75rem] text-[#06849F] font-bold flex items-center group uppercase tracking-widest drop-shadow-sm transition-all hover:text-[#DF08A1] active:scale-95"
               >
-                Hear from Daddy at JustFor.Fans!
+                Hear from us at BlueSky!
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
               </button>
             </div>
@@ -168,24 +170,24 @@ export default function NurseryLanding() {
         </motion.div>
 
         {/* Vertical Spacer 2 (Bottom) */}
-        <div className="flex-[2]" />
+        <div className="hidden md:block md:flex-[2]" />
       </div>
 
       {/* Furniture: Crib (Bottom-Left) */}
-      <div className="absolute bottom-0 left-0 z-10 pointer-events-none">
+      <div className="hidden md:block absolute bottom-0 left-0 z-10 pointer-events-none">
         <img 
-          src="https://i.imgur.com/ZOSd4CH.png" 
+          src="https://i.imgur.com/q4Iof99.png" 
           alt="Crib" 
           className="w-[25vw] h-auto drop-shadow-[0_15px_25px_rgba(0,0,0,0.5)]"
         />
       </div>
 
       {/* Furniture: Changing Table (Bottom-Right) */}
-      <div className="absolute bottom-0 right-0 z-10 pointer-events-none">
+      <div className="hidden md:block absolute bottom-0 right-0 z-10 pointer-events-none">
         <img 
-          src="https://i.imgur.com/KTUo0D8.png" 
+          src="https://i.imgur.com/YDwS78k.png" 
           alt="Changing Table" 
-          className="w-[25vw] h-auto drop-shadow-[0_15px_25px_rgba(0,0,0,0.5)]"
+          className="w-[20vw] h-auto drop-shadow-[0_15px_25px_rgba(0,0,0,0.5)]"
         />
       </div>
     </main>
