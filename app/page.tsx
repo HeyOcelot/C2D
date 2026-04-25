@@ -162,7 +162,7 @@ export default function NurseryLanding() {
                 onClick={() => setShowConfirm(true)}
                 className="text-[1.75rem] text-[#06849F] font-bold flex items-center group uppercase tracking-widest drop-shadow-sm transition-opacity hover:opacity-80"
               >
-                Hear from us at BlueSky!
+                Hear from Daddy at JustFor.Fans!
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
               </button>
             </div>
