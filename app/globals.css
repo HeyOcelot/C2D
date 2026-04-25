@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* CSS for the swaying mobile */
+/* The main hanger swaying from the ceiling */
+@keyframes mainSway {
+  0% { transform: rotate(-4deg); }
+  100% { transform: rotate(4deg); }
+}
+
+/* Individual items swaying on their strings */
+@keyframes itemSway {
+  0% { transform: rotate(-2deg) translateX(-1px); }
+  100% { transform: rotate(2deg) translateX(1px); }
+}
+
+.mobile-root {
+  transform-origin: top center;
+  animation: mainSway 4s ease-in-out infinite alternate;
+}
+
+.mobile-item {
+  transform-origin: top center;
+  /* We will vary the duration for each item in the HTML */
+  animation: itemSway 3s ease-in-out infinite alternate;
+}
