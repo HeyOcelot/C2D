@@ -30,7 +30,7 @@ const TeddyBear = () => (
 export default function NurseryLanding() {
   const [showConfirm, setShowConfirm] = useState(false)
 
-  const bskyUrl = "https://bsky.app/profile/come2daddyprod.bsky.social"
+  const bskyUrl = "https://justfor.fans/Come2Daddy"
 
   return (
     <main className="h-screen w-full relative bg-[#fdfbf7] overflow-hidden font-sans text-[#5A5A40]">
