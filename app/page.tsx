@@ -42,23 +42,23 @@ export default function NurseryLanding() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
-              className="relative p-6 md:p-[30px] shadow-2xl rounded-[35px] max-w-lg w-full overflow-hidden"
+              className="relative p-[30px] shadow-2xl rounded-[35px] max-w-lg w-full overflow-hidden"
               style={{
                 backgroundImage: "url('https://i.imgur.com/cjYjamz.png')",
                 backgroundRepeat: "repeat",
               }}
             >
               <div className="absolute inset-0 shadow-[inset_0_0_40px_rgba(0,0,0,0.6)] pointer-events-none rounded-[35px]" />
-              <div className="bg-[#FFE282] p-6 md:p-8 rounded-[25px] ring-1 ring-gray-200 text-center relative flex flex-col items-center">
-                <p className="text-lg md:text-xl text-[#5A5A40] mb-6 md:mb-8 font-medium leading-relaxed">
-                  Please be advised that you are now leaving the Nursery Dream website to visit our official BlueSky profile. We are not responsible for the content or privacy standards of external platforms.
+              <div className="bg-[#FFE282] p-8 rounded-[25px] ring-1 ring-gray-200 text-center relative flex flex-col items-center">
+                <p className="text-xl text-[#5A5A40] mb-8 font-medium leading-relaxed">
+                  Please be advised that you are now leaving to visit our JustFor.Fans profile. The following material depicts a fictional narrative in which adults engage in consensual age-play fantasy. <span className="font-bold text-[#DF08A1]">This content may only be viewed and heard by adults over the age of 18.</span>
                 </p>
                 
-                <p className="text-xl md:text-2xl text-[#06849F] font-bold uppercase tracking-widest mb-8 md:mb-10">
+                <p className="text-2xl text-[#06849F] font-bold uppercase tracking-widest mb-10">
                   Would you like to continue?
                 </p>
 
-                <div className="flex gap-4 md:gap-6 w-full justify-center">
+                <div className="flex gap-6 w-full justify-center">
                   <button 
                     onClick={() => setShowConfirm(false)}
                     className="flex-1 max-w-[140px] py-4 bg-[#EC42BA] text-white rounded-full font-black uppercase tracking-widest hover:bg-[#DF08A1] transition-all shadow-lg active:scale-95"
@@ -67,7 +67,7 @@ export default function NurseryLanding() {
                   </button>
                   <a 
                     href={bskyUrl}
-                    target="_blank"
+                    target="_self"
                     rel="noopener noreferrer"
                     onClick={() => setShowConfirm(false)}
                     className="flex-1 max-w-[140px] py-4 bg-[#06849F] text-white rounded-full font-black uppercase tracking-widest hover:bg-[#056d83] transition-all shadow-lg active:scale-95 flex items-center justify-center"
@@ -114,16 +114,15 @@ export default function NurseryLanding() {
           {/* Inner Content Box */}
           <div className="bg-[#FFE282] p-0 ring-1 ring-gray-200 rounded-[25px] w-full h-full text-center relative flex flex-col items-center justify-between md:min-h-[440px]">
             {/* Logo Image */}
+            {/* Logo Image */}
             <a 
-              href="https://bsky.app/profile/come2daddyprod.bsky.social" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-6 pb-2 md:p-[50px] md:pb-6 flex justify-center w-full cursor-pointer hover:opacity-90 transition-opacity active:scale-95"
+              onClick={() => setShowConfirm(true)}
+              className="p-8 pb-4 md:p-[50px] md:pb-6 flex justify-center w-full cursor-pointer hover:opacity-90 transition-opacity active:scale-95"
             >
                <img 
                  src="https://i.imgur.com/D4ODMrE.png" 
-                 alt="Nursery Dream Logo" 
-                 className="w-full h-auto max-h-[100px] md:max-h-none object-contain"
+                 alt="Come2Daddy" 
+                 className="w-full h-auto max-h-[120px] md:max-h-none object-contain"
                />
             </a>
 
@@ -154,12 +153,12 @@ export default function NurseryLanding() {
               </a>
             </div>
 
-            <div className="pt-0 md:pt-4 pb-8 md:pb-12 w-full flex justify-center px-6 md:px-12">
+            <div className="pt-2 md:pt-4 pb-8 md:pb-12 w-full flex justify-center px-6 md:px-12">
               <button 
                 onClick={() => setShowConfirm(true)}
-                className="text-xl md:text-[1.75rem] text-[#06849F] font-bold flex items-center group uppercase tracking-widest drop-shadow-sm transition-all hover:text-[#DF08A1] active:scale-95 px-4 py-2"
+                className="text-lg md:text-[1.75rem] text-[#06849F] font-bold flex items-center group uppercase tracking-widest drop-shadow-sm transition-all hover:text-[#DF08A1] active:scale-95"
               >
-                Hear from us at BlueSky!
+                Hear from Daddy at JustFor.Fans!
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
               </button>
             </div>
