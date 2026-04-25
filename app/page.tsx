@@ -51,7 +51,7 @@ export default function NurseryLanding() {
               <div className="absolute inset-0 shadow-[inset_0_0_40px_rgba(0,0,0,0.6)] pointer-events-none rounded-[35px]" />
               <div className="bg-[#FFE282] p-8 rounded-[25px] ring-1 ring-gray-200 text-center relative flex flex-col items-center">
                 <p className="text-xl text-[#5A5A40] mb-8 font-medium leading-relaxed">
-                  Please be advised that you are now leaving the Nursery Dream website to visit our official JustFor.Fans site. The following material depicts a fictional narrative describing adults engaging in consensual fantasy age-play. This content may only be viewed and heard by adults over the age of 18..
+                  Please be advised that you are now leaving the Nursery Dream website to visit our official JustFor.Fans site. The following material depicts a fictional narrative describing adults engaging in consensual fantasy age-play. <b>This content may only be viewed and heard by adults over the age of 18.</b>
                 </p>
                 
                 <p className="text-2xl text-[#06849F] font-bold uppercase tracking-widest mb-10">
@@ -118,14 +118,12 @@ export default function NurseryLanding() {
           <div className="bg-[#FFE282] p-0 ring-1 ring-gray-200 rounded-[25px] w-full text-center relative flex flex-col items-center justify-between min-h-[440px]">
             {/* Logo Image */}
             <a 
-              href="https://bsky.app/profile/come2daddyprod.bsky.social" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              onClick={() => setShowConfirm(true)}
               className="p-[50px] pb-6 flex justify-center w-full cursor-pointer hover:opacity-90 transition-opacity"
             >
                <img 
                  src="https://i.imgur.com/D4ODMrE.png" 
-                 alt="Nursery Dream Logo" 
+                 alt="Come2Daddy" 
                  className="w-full h-auto object-contain"
                />
             </a>
