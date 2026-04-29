@@ -133,7 +133,9 @@ export default function NurseryLanding() {
 
             <div className="flex flex-col md:flex-row justify-center gap-3 md:gap-8 mb-6 md:mb-8 text-sm md:text-sm font-semibold text-gray-800 px-4 md:px-12 w-full">
               <a 
-                onClick={() => setShowConfirm(true)}
+                href="https://bsky.app/profile/come2daddyprod.bsky.social" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-[#DF08A1] active:bg-white/60 active:scale-95 transition-all cursor-pointer bg-white/40 md:bg-transparent p-3 md:p-0 rounded-xl w-full md:w-auto"
               >
                 <svg viewBox="0 0 512 512" width="20" height="20" className="fill-current shrink-0">
