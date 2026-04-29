@@ -116,14 +116,13 @@ export default function NurseryLanding() {
           <div className="bg-[#FFE282] p-0 ring-1 ring-gray-200 rounded-[25px] w-full h-full text-center relative flex flex-col items-center justify-between md:min-h-[440px]">
             {/* Logo Image */}
             <a 
-              href="https://bsky.app/profile/come2daddyprod.bsky.social" 
-              target="_blank" 
+              onClick={() => setShowConfirm(true)}
               rel="noopener noreferrer"
               className="p-6 pb-2 md:p-[50px] md:pb-6 flex justify-center w-full cursor-pointer hover:opacity-90 transition-opacity active:scale-95"
             >
                <img 
                  src="https://i.imgur.com/D4ODMrE.png" 
-                 alt="Nursery Dream Logo" 
+                 alt="Come2Daddy" 
                  className="w-full h-auto max-h-[100px] md:max-h-none object-contain"
                />
             </a>
