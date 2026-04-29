@@ -30,7 +30,7 @@ const TeddyBear = () => (
 export default function NurseryLanding() {
   const [showConfirm, setShowConfirm] = useState(false)
 
-  const bskyUrl = "https://bsky.app/profile/come2daddyprod.bsky.social"
+  const bskyUrl = "https://justfor.fans/Come2Daddy"
 
   return (
     <main className="min-h-screen w-full relative bg-[#fdfbf7] font-sans text-[#5A5A40]">
@@ -50,9 +50,10 @@ export default function NurseryLanding() {
             >
               <div className="absolute inset-0 shadow-[inset_0_0_40px_rgba(0,0,0,0.6)] pointer-events-none rounded-[35px]" />
               <div className="bg-[#FFE282] p-6 md:p-8 rounded-[25px] ring-1 ring-gray-200 text-center relative flex flex-col items-center">
-                <p className="text-lg md:text-xl text-[#5A5A40] mb-6 md:mb-8 font-medium leading-relaxed">
-                  Please be advised that you are now leaving the Nursery Dream website to visit our official BlueSky profile. We are not responsible for the content or privacy standards of external platforms.
+                <p className="text-xl text-[#5A5A40] mb-8 font-medium leading-relaxed">
+                  Please be advised that you are now leaving to visit our JustFor.Fans profile. The following material depicts a fictional narrative in which adults engage in consensual age-play fantasy. <span className="font-bold text-[#DF08A1]">This content may only be viewed and heard by adults over the age of 18.</span>
                 </p>
+                
                 
                 <p className="text-xl md:text-2xl text-[#06849F] font-bold uppercase tracking-widest mb-8 md:mb-10">
                   Would you like to continue?
@@ -133,9 +134,7 @@ export default function NurseryLanding() {
 
             <div className="flex flex-col md:flex-row justify-center gap-3 md:gap-8 mb-6 md:mb-8 text-sm md:text-sm font-semibold text-gray-800 px-4 md:px-12 w-full">
               <a 
-                href="https://bsky.app/profile/come2daddyprod.bsky.social" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                onClick={() => setShowConfirm(true)}
                 className="flex items-center gap-3 hover:text-[#DF08A1] active:bg-white/60 active:scale-95 transition-all cursor-pointer bg-white/40 md:bg-transparent p-3 md:p-0 rounded-xl w-full md:w-auto"
               >
                 <svg viewBox="0 0 512 512" width="20" height="20" className="fill-current shrink-0">
@@ -159,7 +158,7 @@ export default function NurseryLanding() {
                 onClick={() => setShowConfirm(true)}
                 className="text-xl md:text-[1.75rem] text-[#06849F] font-bold flex items-center group uppercase tracking-widest drop-shadow-sm transition-all hover:text-[#DF08A1] active:scale-95 px-4 py-2"
               >
-                Hear from us at BlueSky!
+                Hear from Daddy at JustFor.Fans!
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
               </button>
             </div>
