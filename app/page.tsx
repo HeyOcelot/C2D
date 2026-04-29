@@ -68,7 +68,7 @@ export default function NurseryLanding() {
                   </button>
                   <a 
                     href={bskyUrl}
-                    target="_blank"
+                    target="_self"
                     rel="noopener noreferrer"
                     onClick={() => setShowConfirm(false)}
                     className="flex-1 max-w-[140px] py-4 bg-[#06849F] text-white rounded-full font-black uppercase tracking-widest hover:bg-[#056d83] transition-all shadow-lg active:scale-95 flex items-center justify-center"
